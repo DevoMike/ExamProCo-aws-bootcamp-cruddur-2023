@@ -9,4 +9,6 @@ tasks:
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
 
-vscode
+vscode:
+  extensions:
+    - 42Crunch.vscode-openapi
