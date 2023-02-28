@@ -22,9 +22,29 @@ using the instruction from the video done by Andrew. i was about to activate the
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
+
 NOTE: 
 During the process of installation i was unable to create the auto installation whenever Launched Gitpod. the problem here was that i need to 
 do a fresh installtion whenever i tired to access AWS cli VIA Gitpod. 
 so i decided to do a manual installtion anytime i wanted to use gitpod
 ![gitpod AWS instalation](https://user-images.githubusercontent.com/121178341/221867999-6a06c817-ea91-45b6-bde8-b13c7ba135b3.PNG)
+
+What this means is that i do not need to run a fresh installation BUT I can only run " sudo ./aws/install" to install AWS CLI just like the picture below
+![success running AWS CLI](https://user-images.githubusercontent.com/121178341/221868876-f5b5c835-9f66-45ba-96e4-872488285fb3.PNG)
+
+**Create a Billing Alarm**
+Again with the Help of the instruction by Andrew.
+ i successfully created a billing alarm using the billing alarm. this was achieved via the billing console on the aws mangement page.
+ 
+ ![billing alarm](https://user-images.githubusercontent.com/121178341/221872212-a25f948a-5b59-4552-ac50-3589a0ade31e.PNG)
+
+ **Create a budget**
+ This was done with the Aid of the instruction by Andrew and the team
+![CLI billing alarm](https://user-images.githubusercontent.com/121178341/221870566-04aabf81-f511-4208-96a5-a1a01b114981.PNG)
+
+A successful budget created appeared on the AWS ACCOUNT PAGE shown below
+ ![budget creation](https://user-images.githubusercontent.com/121178341/221871341-55593de3-5453-448c-b968-f82bbd8bd101.PNG)
+
+Thanks
+ 
 
