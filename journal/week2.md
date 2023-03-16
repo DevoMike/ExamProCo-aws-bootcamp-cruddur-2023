@@ -32,3 +32,13 @@ At the end of the configuration, Data traces was found from the honeycomb platfo
 ![query from honeycomb](https://user-images.githubusercontent.com/121178341/225694266-9b41a85b-25f0-43f6-aa06-62e73185bbaf.PNG)
 
 
+##HOMEWORK CHALLENGE
+RUN A CUSTOM QUERIES IN HONEYCOMB AND SAVE THEM.
+
+I run a custom query WITH MAX(DURATION_MS) 
+WHERE INCLUDES ALL EVENTS
+GROUP BY: DURATIONS_MS
+
+Results shown below pieces of data.
+![custom](https://user-images.githubusercontent.com/121178341/225706922-2d17cc05-d985-4af3-ab6b-b13a6eb6e161.PNG)
+
