@@ -46,3 +46,7 @@ Results shown below pieces of data.
 A link of the save custom tracing
 https://ui.honeycomb.io/mbonu.mike-gettingstarted/environments/mikebootcamp/datasets/backend-flask/result/bsYm59g65Qf/a/CrZvEfTKUiD/Custom-tracing-from-the-crudddar-project.
 
+After successfully adding the X-Ray file on the app. a group was created successfully.
+
+![X-ray](https://user-images.githubusercontent.com/121178341/226382923-979ef0ee-f602-4e39-8b13-208ba226e4d0.PNG)
+
