@@ -28,8 +28,6 @@ with tracer.start_as_current_span("http-handler"):
 SPAM ACTIVITIES WAS ALSO COLLECTED From the picture below
 ![spam activites](https://user-images.githubusercontent.com/121178341/225688587-3a6ccf63-f206-4d71-b06e-2cf9fb6f28dc.PNG)
 
-##Configure and provision X-Ray daemon within docker-compose and send data back to X-Ray API
-
 At the end of the configuration, Data traces was found from the honeycomb platform where a query was run using the count, API NOW AND Trac ID option
 ![query from honeycomb](https://user-images.githubusercontent.com/121178341/225694266-9b41a85b-25f0-43f6-aa06-62e73185bbaf.PNG)
 
@@ -48,6 +46,7 @@ Results shown below pieces of data.
 A link of the save custom tracing
 https://ui.honeycomb.io/mbonu.mike-gettingstarted/environments/mikebootcamp/datasets/backend-flask/result/bsYm59g65Qf/a/CrZvEfTKUiD/Custom-tracing-from-the-crudddar-project.
 
+##Configure and provision X-Ray daemon within docker-compose and send data back to X-Ray API##
 After successfully adding the X-Ray file on the app. a group was created successfully.
 
 ![X-ray](https://user-images.githubusercontent.com/121178341/226382923-979ef0ee-f602-4e39-8b13-208ba226e4d0.PNG)
