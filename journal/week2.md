@@ -32,7 +32,7 @@ At the end of the configuration, Data traces was found from the honeycomb platfo
 ![query from honeycomb](https://user-images.githubusercontent.com/121178341/225694266-9b41a85b-25f0-43f6-aa06-62e73185bbaf.PNG)
 
 
-##HOMEWORK CHALLENGE
+**HOMEWORK CHALLENGE**
 RUN A CUSTOM QUERIES IN HONEYCOMB AND SAVE THEM.
 
 I run a custom query WITH MAX(DURATION_MS) 
@@ -47,6 +47,7 @@ A link of the save custom tracing
 https://ui.honeycomb.io/mbonu.mike-gettingstarted/environments/mikebootcamp/datasets/backend-flask/result/bsYm59g65Qf/a/CrZvEfTKUiD/Custom-tracing-from-the-crudddar-project.
 
 **Configure and provision X-Ray daemon within docker-compose and send data back to X-Ray API**
+
 After successfully adding the X-Ray file on the app. a group was created successfully.
 
 ![X-ray](https://user-images.githubusercontent.com/121178341/226382923-979ef0ee-f602-4e39-8b13-208ba226e4d0.PNG)
