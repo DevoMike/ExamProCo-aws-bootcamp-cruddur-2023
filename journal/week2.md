@@ -58,4 +58,19 @@ all ports are running
 After a successfully configureing of the frontend and backend with the AWS X-ray. i was able to get logs from the AWS platform
 ![finally getting trace of the site from AWS](https://user-images.githubusercontent.com/121178341/226599242-104f2c0c-35c2-43ac-a794-c7aa0117d491.PNG)
 
+**Cloudwatch Log**
+succssessfully install the cloudwatch on the app.py.
+The neccessary codes was put inplace. 
+
+
+
+
+
+
+
+
+
+
+**Integrate Rollbar for Error Logging**
+
 
