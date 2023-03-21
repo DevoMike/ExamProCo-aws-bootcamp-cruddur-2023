@@ -50,3 +50,12 @@ After successfully adding the X-Ray file on the app. a group was created success
 
 ![X-ray](https://user-images.githubusercontent.com/121178341/226382923-979ef0ee-f602-4e39-8b13-208ba226e4d0.PNG)
 
+During the process of installing X-ray, i encountered a problem with opening the backend and frontend port. i manually run the Npm i TO GET THE frontend running
+and i resolved the app.py error following Andrews direction resovlved the backend 
+all ports are running
+![containers running](https://user-images.githubusercontent.com/121178341/226598193-c44fbc89-c004-475b-b498-a0b7bdf55a9f.PNG)
+
+After a successfully configureing of the frontend and backend with the AWS X-ray. i was able to get logs from the AWS platform
+![finally getting trace of the site from AWS](https://user-images.githubusercontent.com/121178341/226599242-104f2c0c-35c2-43ac-a794-c7aa0117d491.PNG)
+
+
