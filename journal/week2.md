@@ -63,7 +63,8 @@ After a successfully configureing of the frontend and backend with the AWS X-ray
 **Cloudwatch Log**
 succssessfully install the cloudwatch on the app.py.
 The neccessary codes was put inplace. 
-
+blinker and rollbar installed successfully using the pip command in the requirements
+![log stream](https://user-images.githubusercontent.com/121178341/226631214-3b769835-ba5d-4565-9f44-d0cd6b2eb0fb.PNG)
 
 
 
