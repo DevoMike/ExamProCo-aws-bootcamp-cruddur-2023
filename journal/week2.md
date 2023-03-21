@@ -63,16 +63,13 @@ After a successfully configureing of the frontend and backend with the AWS X-ray
 **Cloudwatch Log**
 succssessfully install the cloudwatch on the app.py.
 The neccessary codes was put inplace. 
-
-
-
-
-
-
-
+Logs are seen from the cloudwatch log group tab in the AWS console.
+Image is attached below.
 
 
 
 **Integrate Rollbar for Error Logging**
+blinker and rollbar installed successfully using the pip command in the requirements
+
 
 
