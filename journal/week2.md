@@ -28,6 +28,8 @@ with tracer.start_as_current_span("http-handler"):
 SPAM ACTIVITIES WAS ALSO COLLECTED From the picture below
 ![spam activites](https://user-images.githubusercontent.com/121178341/225688587-3a6ccf63-f206-4d71-b06e-2cf9fb6f28dc.PNG)
 
+##Configure and provision X-Ray daemon within docker-compose and send data back to X-Ray API
+
 At the end of the configuration, Data traces was found from the honeycomb platform where a query was run using the count, API NOW AND Trac ID option
 ![query from honeycomb](https://user-images.githubusercontent.com/121178341/225694266-9b41a85b-25f0-43f6-aa06-62e73185bbaf.PNG)
 
