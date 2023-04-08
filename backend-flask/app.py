@@ -42,13 +42,13 @@ import rollbar.contrib.flask
 from flask import got_request_exception
 
 # Configuring Logger to Use CloudWatch
-LOGGER = logging.getLogger(__name__)
-LOGGER.setLevel(logging.DEBUG)
-console_handler = logging.StreamHandler()
-cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
-LOGGER.addHandler(console_handler)
-LOGGER.addHandler(cw_handler)
-LOGGER.info("Test Log")
+#LOGGER = logging.getLogger(__name__)
+#LOGGER.setLevel(logging.DEBUG)
+#console_handler = logging.StreamHandler()
+#cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+#LOGGER.addHandler(console_handler)
+#LOGGER.addHandler(cw_handler)
+#LOGGER.info("Test Log")
 
 #Honeycomb---
 # Initialize tracing and an exporter that can send data to Honeycomb
@@ -103,6 +103,7 @@ cors = CORS(
 
 #Rollbar----
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+
 @app.before_first_request
 def init_rollbar():
     """init rollbar module"""
@@ -159,30 +160,14 @@ def data_create_message():
     return model['data'], 200
   return
 
-#@app.route("/api/activities/home", methods=['GET'])
-#def data_home():
-    #print(request.headers.get('Authorization')
-     #)
-  #data = HomeActivities.run()
-  #return data, 200
-
 @app.route("/api/activities/home", methods=['GET'])
-@xray_recorder.capture('activities_home')
 def data_home():
-  access_token = extract_access_token(request.headers)
-  try:
-    claims = cognito_jwt_token.verify(access_token)
-    # authenicatied request
-    app.logger.debug("authenicated")
-    app.logger.debug(claims)
-    app.logger.debug(claims['username'])
-    data = HomeActivities.run(cognito_user_id=claims['username'])
-  except TokenVerifyError as e:
-    # unauthenicatied request
-    app.logger.debug(e)
-    app.logger.debug("unauthenicated")
+    print(
+        request.headers.get('Authorization')
+    )
     data = HomeActivities.run()
-  return data, 200
+    return data, 200
+
 
 @app.route("/api/activities/notifications", methods=['GET'])
 def data_notifications():
