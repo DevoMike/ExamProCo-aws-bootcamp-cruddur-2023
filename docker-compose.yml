@@ -2,6 +2,7 @@ version: "3.8"
 services:
   backend-flask:
     environment:
+      CONNECTION_URL: "${CONNECTION_URL}"
       FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
       BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
       OTEL_SERVICE_NAME: "backend-flask"
@@ -33,16 +34,6 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend-react-js:/frontend-react-js
-  xray-daemon:
-    image: "amazon/aws-xray-daemon"
-    environment:
-      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
-      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
-      AWS_REGION: "eu-west-2"
-    command:
-      - "xray -o -b xray-daemon:2000"
-    ports:
-      - 2000:2000/udp
   #dynamodb-local:
     # https://stackoverflow.com/questions/67533058/persist-local-dynamodb-data-in-volumes-lack-permission-unable-to-open-databa
     # We needed to add user:root to get this working.
@@ -65,6 +56,16 @@ services:
       - '5432:5432'
     volumes: 
       - db:/var/lib/postgresql/data
+  xray-daemon:
+    image: "amazon/aws-xray-daemon"
+    environment:
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+      AWS_REGION: "eu-west-2"
+    command:
+      - "xray -o -b xray-daemon:2000"
+    ports:
+      - 2000:2000/udp
 
 # the name flag is a hack to change the default prepend folder
 # name when outputting the image names

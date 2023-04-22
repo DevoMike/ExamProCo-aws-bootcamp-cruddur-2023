@@ -21,3 +21,4 @@ CREATE TABLE public.activities (
   expires_at TIMESTAMP,
   created_at TIMESTAMP default current_timestamp NOT NULL
 );
+
